@@ -1,0 +1,21 @@
+
+
+services:
+  Hosseinblog_postgresql:
+    image: postgres:13
+    container_name: Hosseinblog_postgresql
+    volumes:
+      - Hosseinblog_postgresql:/var/lib/postgresql/data
+    restart: always
+    env_file: .env
+    ports:
+      - "5432:5432"
+    networks:
+      - Hosseinblog_network
+
+volumes:
+  Hosseinblog_postgresql:
+    external: true
+networks:
+  Hosseinblog_network:
+    external: true
