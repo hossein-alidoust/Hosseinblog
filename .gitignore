@@ -1,3 +1,14 @@
-.idea/
+# created by virtualenv automatically
+*
+.idea
 
 venv/
+
+blog/migrations/
+
+.env
+
+db.sqlite3
+
+#static files
+files/
